@@ -3,4 +3,61 @@
 @{
 }
 
-<a class="nav-link text-dark" asp-area="" asp-page="../Checkout/Checkout">Checkout</a>
+<div class="text-center container">
+  <h1>Create Your Own Pizza</h1>
+  <form method="post" class="mx-auto my-5 px-5 pt-5 rounded-5 bg-light col-4">
+    <input type="text" asp-for="Pizza.PizzaName" 
+    placeholder="Give your pizza a name..." />
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.TomatoSauce" 
+      placeholder="Sauce" />
+      Sauce
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Cheese" 
+      placeholder="Cheese" />
+      Cheese
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Pepperoni" 
+      placeholder="Pepperoni" />
+      Pepperoni
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Mushrooms" 
+      placeholder="Mushrooms" />
+      Mushrooms
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Tuna" 
+      placeholder="Tuna" />
+      Tuna
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Pineapple" 
+      placeholder="Pineapple" />
+      Pineapple
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Ham" 
+      placeholder="Ham" />
+      Ham
+    </label>
+    <br/>
+    <label>
+      <input type="checkbox" asp-for="Pizza.Beef" 
+      placeholder="Beef" />
+      Beef
+    </label>
+    <br/>
+    
+    <button class="btn btn-primary mt-1" type="submit">Order My Pizza</button>
+  </form>
+</div>
